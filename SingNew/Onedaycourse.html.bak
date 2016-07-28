@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>One Day Course</title>
+
+<script type="text/javascript">
+
+$('#form input').keydown(function(e) {
+    if (e.keyCode == 13) {
+        $('#form').submit();
+    }
+});
+
+</script>
+
+<style type="text/css">
+
+
+body{
+	background:url(images/background.png);
+	margin:0;
+	padding:0;
+}
+#wrapper{
+	width:1025px;
+	position:relative;
+	margin:0 auto;
+}
+#header{
+	width:740px;
+	text-align:center;
+	margin:0 auto;
+	overflow:hidden;
+}
+#logo{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+#menu{
+	height:50px;
+	margin-bottom:20px;
+}
+#menu ul{
+	margin:0;
+	margin-left:10px;
+	padding:0;
+}
+#menu li{
+	height:44px;
+	list-style:none;
+	float:left;
+	width: 166px;
+	margin-left:-20px;
+	position:relative;
+}
+#menu li a:link, #menu li a:visited{
+	width:155px;
+	background-image: url(images/arrow.jpg);
+	background-repeat:no-repeat;
+	color:#fff;
+	padding:13px 15px;
+	text-decoration:none;
+	display:block;
+	position:absolute;
+}
+#menu li a:hover{
+	background-image: url(images/pinkarrow.jpg);
+	z-index:100;
+}
+#menuHome{
+	background-image: url(images/arrowH.jpg) !important;
+}
+#menuHome:hover{
+	background-image: url(images/pinkarrowH.jpg) !important;
+}
+#menuContact{
+	background-image: url(images/arrowC.png) !important;
+}
+#menuContact:hover{
+	background-image: url(images/pinkarrowC.png) !important;
+}
+
+
+
+
+#submenu{
+	height:50px;
+	margin: 20px 0 20px 10px;
+}
+
+#submenu ul{
+	margin:0;
+	margin-left:10px;
+	padding:0;
+}
+#submenu li{
+	height:44px;
+	list-style:none;
+	float:left;
+	width: 166px;
+	margin-left:-20px;
+	position:relative;
+}
+#submenu li a:link, #submenu li a:visited{
+	width:155px;
+	background-image: url(images/arrow.jpg);
+	background-repeat:no-repeat;
+	color:#fff;
+	padding:13px 15px;
+	text-decoration:none;
+	display:block;
+	position:absolute;
+}
+#submenu li a:hover{
+	background-image: url(images/pinkarrow.jpg);
+	z-index:100;
+}
+#submenuoneday{
+	background-image: url(images/arrowH.jpg) !important;
+}
+#submenuoneday:hover{
+	background-image: url(images/pinkarrowH.jpg) !important;
+}
+#submenutenweek{
+	background-image: url(images/arrowC.png) !important;
+}
+#submenutenweek:hover{
+	background-image: url(images/pinkarrowC.png) !important;
+}
+
+
+
+
+#content{
+	width:750px;
+	margin:0 auto;
+	
+}
+
+#footer{
+	width:100%;
+	height:120px;
+	
+	
+	padding-top:177px;
+}
+
+
+</style>
+
+
+<style type="text/css">
+
+#form {
+    background-image: url(images/onedayapp.png);
+    background-repeat: no-repeat;
+    height: 578px;
+	z-index:1000;
+    margin-top:20px;
+    width: 774px;
+}
+
+
+</style>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+
+</script>
+
+<script src="jquery.collapse.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$("#image").click(function(){
+	
+	$("#form").fadeIn('slow');	
+	
+	});
+		
+});
+
+$(document).ready(function(){
+$('#close').click(function() {
+  $('#form').fadeOut('slow')
+});
+});
+
+
+
+</script>
+
+</head>
+
+
+<body>
+<!--WRAPPER STARTS HERE-->
+
+<div id="wrapper" >
+
+<!--HEADER STARTS HERE-->
+
+<div id="header">
+    
+    	<a href="index.html"><img id="logo" src="images/header.png" width="304" height="108" /></a>
+        
+        <!--MENU STARTS HERE-->
+        
+        <div id="menu">
+          <ul>
+            <li><a id="menuHome" href="index.html">HOME</a>
+              
+            </li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Onedaycourse.html">GROUP</a>
+              
+            </li>
+            <li><a href="OneonOne.html">ONE ON ONE</a></li>
+            <li><a id="menuContact" href="contact.html">CONTACT</a></li>
+          </ul>
+
+	</div>
+    <!--	END MENU-->
+
+</div>
+	
+ <!--HEADER ENDS HERE--> 
+   
+    
+<div id="content">
+
+<img id="image" src="images/onedaycourse.png" />
+
+ 
+  
+<div id="form" align="center" style="display:none; position:absolute;">
+
+
+
+<a href="#"><img id="close" src="images/close.png" width="48" height="49" style="position:absolute; margin-left: 318px;
+    margin-top: -26px;"/></a>
+ 
+ 
+ 
+  <form method="post" name="application.php" style="position:absolute; margin-top:90px; margin-left:20px;">
+   
+  <table height="428px" width="774px" cellspacing="0" cellpadding="1" cols="4" style="color:#FFF">
+   
+ 	<tr> 
+ 	
+    	<td>Name*</td>
+   	 	<td> <input type="text" name="Name" style="width:260px; height:25px;" /><br /></td>
+    
+ 	</tr>
+  
+ 	<tr> 
+ 	
+    	<td>Current Address*</td>
+ 		<td><input type="text" name="Address" style="width:260px; height:25px;"/><br /></td>
+ 
+ 	</tr>
+   
+ 	<tr>
+ 
+ 		<td> County</td>
+    	<td><input type="text" style="width:180px; height:25px;"/><span></span>
+  
+   		<font style="margin-left:10px;">PostCode*</font></td>
+   		<td><input type="text" style="width:260px; height:25px; margin-right:70px;"/><br /></td>
+   
+  	</tr>
+   
+   <tr>
+   		<td>DOB*</td>
+   		<td><input type="date" style="width:260px; height:25px;"/><br /></td>
+   
+   </tr>
+   
+ 	<tr>
+ 		<td style="margin-left:15px;"> Phone*</td>
+        <td><input type="tel" style="width:260px; height:25px;"/><br /></td>
+        
+   </tr>
+  
+ 	<tr>
+    
+    	<td> Mobile*</td>
+        <td><input type="tel" style="width:260px; height:25px;"/><br /></td>
+        
+     </tr>
+  
+  	<tr>
+    
+    	<td> Email*</td>
+        <td><input type="email" style="width:260px; height:25px;"/><br /></td>
+        
+     </tr>
+   
+  	<tr>
+    
+    	<td> Emergency Contact*</td>
+    	<td><input type="tel" style="width:260px; height:25px;"/></td>
+        
+    </tr>
+   
+   </table>
+   
+   </form>
+   
+ 
+   
+ 
+
+</div>
+<br />
+  
+  
+  <div id="submenu">
+          <ul>
+            <li><a id="submenuoneday" href="Onedaycourse.html">One Day</a>
+      
+    </li>
+    <li><a  href="Fiveweekcourse.html">Five Week</a></li>
+    <li><a id="submenutenweek" href="Tenweekcourse.html">Ten Week</a></li>
+      
+  </ul>
+  
+  <a href="#"><img src="images/twitter.png" style="position:absolute; margin-left:60px; margin-top:-8px;" /></a>
+  <a href="#"><img src="images/facebook.png" style="position:absolute; margin-left:110px; margin-top:-10px;" /></a>  
+<br />
+  
+  </div>
+  
+  
+<img src="images/onedayinfo.png" />
+  
+  
+  </div>      
+    
+ </div>       
+        
+    
+ <!--FOOTER STARTS HERE-->
+<div id="footer">
+
+<a href="index.html"><img src="images/footersing.png" width="112" height="40" style="float:left; margin-left: 40px; margin-top: 60px;" /></a>
+      
+      <div style="width:930px; position:relative; margin:0 auto; text-align:center"> 
+  			
+            <a href="index.html" style="text-decoration:none; font-family:Gill Sans; font-size:12px; color:#000;">HOME | </a>
+  			<a href="About.html" style="text-decoration:none; font-family:Gill Sans; font-size:12px; color:#000;">ABOUT | </a> 
+   			<a href="group1.html" style="text-decoration:none; font-family:Gill Sans; font-size:12px; color:#000;">GROUP | </a>
+   			<a href="OneonOne.html" style="text-decoration:none; font-family:Gill Sans; font-size:12px; color:#000;">ONE ON ONE | </a>
+   			<a href="contact.html" style="text-decoration:none; font-family:Gill Sans; font-size:12px; color:#000;">CONTACT</a>
+    
+    		<p style="color:#FFF; font-size: 8px;font-family: Gill Sans;margin-top: 40px;"> ALL RIGHTS RESERVED TO SING WITH THE STARS 2012@</p>
+      </div>
+    
+    <div style="width:150px; float:right; color:#FFF; font-family:Gill Sans;">
+    
+    Designed by
+    
+    <a href="http://www.thebkh.co.uk/" target="_new"><img src="images/logo.png" width="42" height="41" style="vertical-align: middle;" /></a> 
+       
+    </div>
+</div>
+<!--END OF FOOTER-->
+</body>
+</html>

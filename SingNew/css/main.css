@@ -1,0 +1,129 @@
+
+body{
+	background:url(images/background.png);
+	margin:0;
+	padding:0;
+}
+#wrapper{
+	width:1025px;
+	position:relative;
+	margin:0 auto;
+}
+#header{
+	width:740px;
+	text-align:center;
+	margin:0 auto;
+	overflow:hidden;
+}
+#logo{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+#menu{
+	height:50px;
+	margin-bottom:20px;
+}
+#menu ul{
+	margin:0;
+	margin-left:10px;
+	padding:0;
+}
+#menu li{
+	height:44px;
+	list-style:none;
+	float:left;
+	width: 166px;
+	margin-left:-20px;
+	position:relative;
+}
+#menu li a:link, #menu li a:visited{
+	width:155px;
+	background-image: url(images/arrow.jpg);
+	background-repeat:no-repeat;
+	color:#fff;
+	padding:13px 15px;
+	text-decoration:none;
+	display:block;
+	position:absolute;
+}
+#menu li a:hover{
+	background-image: url(images/pinkarrow.jpg);
+	z-index:100;
+}
+#menuHome{
+	background-image: url(images/arrowH.jpg) !important;
+}
+#menuHome:hover{
+	background-image: url(images/pinkarrowH.jpg) !important;
+}
+#menuContact{
+	background-image: url(images/arrowC.png) !important;
+}
+#menuContact:hover{
+	background-image: url(images/pinkarrowC.png) !important;
+}
+
+
+
+
+#submenu{
+	height:50px;
+	margin-top:297px;
+}
+
+#submenu ul{
+	margin:0;
+	margin-left:10px;
+	padding:0;
+}
+#submenu li{
+	height:44px;
+	list-style:none;
+	float:left;
+	width: 166px;
+	margin-left:-20px;
+	position:relative;
+}
+#submenu li a:link, #submenu li a:visited{
+	width:155px;
+	background-image: url(images/arrow.jpg);
+	background-repeat:no-repeat;
+	color:#fff;
+	padding:13px 15px;
+	text-decoration:none;
+	display:block;
+	position:absolute;
+}
+#submenu li a:hover{
+	background-image: url(images/pinkarrow.jpg);
+	z-index:100;
+}
+#submenuoneday{
+	background-image: url(images/arrowH.jpg) !important;
+}
+#submenuoneday:hover{
+	background-image: url(images/pinkarrowH.jpg) !important;
+}
+#submenutenweek{
+	background-image: url(images/arrowC.png) !important;
+}
+#submenutenweek:hover{
+	background-image: url(images/pinkarrowC.png) !important;
+}
+
+
+
+
+#content{
+	width:750px;
+	margin:0 auto;
+	
+}
+
+#footer{
+	width:100%;
+	height:120px;
+	
+	
+	padding-top:137px;
+}
